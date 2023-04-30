@@ -1,0 +1,162 @@
+// Navbar
+@media #{$maxMediumScreen} {
+  .navbar-collapse {
+    padding: 20px;
+    ul.navbar-nav {
+      li {
+        margin: 3px 0;
+        a {
+          font-size: 15px;
+        }
+        &:hover {
+          a:before {
+            left: 10px;
+            width: 3%;
+          }
+        }
+        &.active {
+          a {
+            &:before {
+              left: 10px;
+              width: 3%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border-radius: 0;
+  }
+}
+
+// Home
+@media #{$maxMediumScreen} {
+  .home {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+}
+
+@media #{$maxSmallScreen} {
+  .home {
+    h1 {
+      font-size: 50px !important;
+    }
+    .btn {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Features
+@media #{$maxSmallScreen} {
+  .features {
+    .feat {
+
+      margin-bottom: 30px;
+
+    }
+  }
+}
+
+// description
+@media #{$maxMediumScreen} {
+  .desc {
+    .desc-img {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+// Screenshot
+@media #{$maxMediumScreen} {
+  p.add-border-center {
+    margin-bottom: 60px;
+  }
+}
+
+// pricing
+@media #{$maxMediumScreen} {
+  .pricing {
+    .card {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media #{$maxSmallScreen} {
+  .pricing {
+    .card {
+      &.special {
+        background-color: #f4f7fc;
+        padding: 50px 0 45px;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// Feedback
+@media #{$maxMediumScreen} {
+  .feedback {
+    .feedback-slider {
+      padding: 30px 0;
+      .item {
+        padding: 0;
+        &.slick-active {
+          display: block;
+          p {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+        p {
+          opacity: 0;
+          margin: auto;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Download
+@media #{$maxMediumScreen} {
+  .download {
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Footer
+footer {
+  @media #{$maxSmallScreen} {
+    .contact-us,
+    .newsletter,
+    .useful-links {
+      padding: 20px 0 0;
+      margin: 20px 0 0;
+      border-top: 1px solid $borderColor;
+    }
+    .copyright {
+      margin-top: 20px !important;
+      .copyright-author {
+        text-align: center;
+      }
+      .copyright-links {
+        float: none !important;
+        ul {
+          text-align: center;
+          li {
+            margin-right: 10px;
+          }
+        }
+      }
+      p, li {
+        font-size: 12px;
+      }
+    }
+  }
+}

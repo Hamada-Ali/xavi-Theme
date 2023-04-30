@@ -1,0 +1,29 @@
+// main rules
+* {
+  @include prefixer(box-sizing, border-box, webkit moz o);
+}
+html ,body {
+  font-family:$Poppins;
+  font-weight:normal;
+  color: $paragraphColor;
+  //height:5000px;
+  box-sizing: border-box;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family:$Nunito !important;
+  color:$blackColor !important;
+  position:relative;
+}
+
+p, span {
+  font-size:14px;
+}
+
+button, input {
+  outline: none !important;
+}
+
+img {
+  max-width: 100% ;
+}

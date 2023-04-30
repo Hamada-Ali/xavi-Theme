@@ -1,0 +1,19 @@
+// Grid system
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-slider {
+    padding: 70px 120px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-slider {
+    padding: 70px 30px;
+  }
+}

@@ -1,0 +1,17 @@
+// Add Border Component To Header
+.add-border-center,
+.add-border {
+  position: relative;
+}
+
+.add-border:before {
+  @extend %border;
+  left: 0;
+}
+
+.add-border-center:before {
+  @extend %border;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

@@ -1,0 +1,35 @@
+// header button
+  .btn {
+    font: {
+      weight:600;
+      size: 16px;
+    }
+    border: {
+      radius:30px;
+      style: solid;
+      width: 2px;
+    }
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding:13px 30px;
+    line-height:1;
+    @include prefixer(transition, .3s, webkit moz o);
+  }
+
+  .btn-primary {
+    border-color:transparent;
+    color:#fff;
+    background-color: $mainColor;
+    &:hover {
+      @extend %trans-transition;
+    }
+  }
+
+.btn-trans {
+  background-color: transparent;
+  border-color: $blackColor;
+  color:$blackColor;
+  &:hover {
+    @extend %primary-transition;
+  }
+}

@@ -1,0 +1,88 @@
+// Footer Section
+footer {
+  padding: 90px 0 0;
+  h4 {
+    font: {
+      weight: 800;
+    }
+    margin-bottom: 15px;
+  }
+  .footer-info {
+    a {
+      margin-bottom: 20px;
+      display: block;
+    }
+    p {
+      line-height: 2;
+    }
+  }
+  .useful-links {
+    ul {
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .newsletter {
+    p {
+      font-size: 16px;
+    }
+    input[type="email"] {
+      padding: 10px 30px 10px 20px;
+      outline: none;
+      margin-bottom: 15px;
+      width: 100%;
+      border: {
+        radius: 30px;
+        style: solid;
+        width: 1px;
+        color: $borderColor;
+      }
+    }
+  }
+  .contact-us {
+    .single-address {
+      .address-icon {
+        float: left;
+        padding-right: 10px;
+        i {
+          color: $mainColor;
+        }
+      }
+      p {
+        float: left;
+      }
+      overflow: hidden;
+    }
+  }
+  .footer-social {
+    h6 {
+      display: inline-block;
+      padding-right: 20px;
+    }
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        i {
+          color: #999;
+        }
+      }
+    }
+  }
+  .copyright {
+    border-top:1px solid $borderColor;
+    margin-top: 85px;
+    padding: 25px 0 5px;
+    .copyright-links {
+      ul {
+        li {
+          display: inline-block;
+          font-size: 14px;
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// classes
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.section-title {
+  width: 50%;
+  margin-right: 25%;
+}
+
+.section-header {
+  font: {
+    size:36px;
+    weight: 800;
+  }
+}
+
+// placeholder
+
+%trans-transition {
+  border-color:$blackColor;
+  background-color: transparent;
+  color:$blackColor;
+}
+
+%primary-transition {
+  border-color:transparent;
+  background-color: $mainColor;
+  color:#fff;
+}
+
+%arrow {
+  position: absolute;
+  top: 34%;
+  font-size: 25px;
+  z-index: 44;
+  cursor: pointer;
+  transition:.2s;
+  text-align: center;
+  &:hover {
+    border-bottom: 3px solid $mainColor;
+    color:$mainColor;
+  }
+}
+
+%border {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  width: 58px;
+  height: 5px;
+  background: url("../images/icons/line.png");
+}

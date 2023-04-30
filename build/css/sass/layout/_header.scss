@@ -1,0 +1,52 @@
+// Header layout
+header {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index:999;
+  transition:.5s;
+  .navbar-collapse {
+    background-color:$backColor;
+  }
+  .navbar-toggler {
+    border:2px solid $mainColor;
+    padding: 8px 10px;
+    .navbar-icon {
+      height: 3px;
+      width: 20px;
+      margin-top: 3px;
+      background-color: $mainColor;
+      display: block;
+      &:last-child {
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .nav-item {
+    padding: 0 .5rem;
+    position: relative;
+    .nav-link:before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: $mainColor;
+      bottom: 4px;
+      left: 16px;
+      transition: .3s;
+    }
+    &:hover .nav-link:before, &.active .nav-link:before{
+      width: 25%;
+    }
+    .nav-link {
+      font-family: $Nunito;
+      font-weight:700;
+      color:$blackColor;
+    }
+  }
+  .header-btn {
+    margin-left:10px;
+  }
+}
